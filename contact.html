@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content="work life balance, wellness, mental health, remote work, productivity"
+    />
+
+    <!-- Author Meta -->
+    <meta name="author" content="Leandro Nuñez Berroa" />
+
+    <!-- Description -->
+    <meta
+      name="description"
+      content="A website dedicated to work-life balance and wellness tips for remote workers."
+    />
+
+    <!-- Title -->
+    <title>Contact Us</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/work-balance-favicon.png"
+    />
+
+    <!-- Style Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/contact.css" />
+  </head>
+  <body>
+    <!-- Section 1: Header -->
+    <header class="header" role="banner">
+      <nav>
+        <a href="/home.html">
+          <img
+            src="/images/work-balance-logov5.svg"
+            class="logo-navbar"
+            alt="Work Balance Logo"
+            title="Work Balance Logo"
+          />
+        </a>
+
+        <!-- Hidden checkbox for toggling the menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+        <!-- Label for the menu button -->
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fa fa-bars" aria-label="Open Menu"></i>
+        </label>
+
+        <!-- Navigation links -->
+        <aside
+          class="nav-links"
+          id="navLinks"
+          role="navigation"
+          aria-label="Main Navigation"
+        >
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="wellbeing-tips.html">Wellbeing Tips</a></li>
+            <li><a href="quick-breaks.html">Quick Breaks</a></li>
+            <li><a href="#">Chill Spots</a></li>
+            <li><a href="#">Workspace Tips</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <label for="menu-toggle" class="close-icon">Close</label>
+        </aside>
+      </nav>
+
+      <section class="text-box">
+        <h1><strong>Contact Us</strong></h1>
+        <h2>
+          <strong
+            >If you have any questions or would like to share feedback and
+            suggestions for improving the website, feel free to reach out to
+            us.</strong
+          >
+        </h2>
+      </section>
+    </header>
+
+    <!-- Section 2: Contact Form -->
+    <section class="container">
+      <section class="content-wrapper">
+        <figure class="picture">
+          <img
+            src="/images/Contact-Page-picture.webp"
+            alt="Placeholder image representing contact form illustration"
+            class="contact-image"
+          />
+          <figcaption>Illustration of contact form</figcaption>
+        </figure>
+
+        <form class="form">
+          <fieldset class="radio-group-container">
+            <legend>Choose your salutation*</legend>
+            <section class="radio-group">
+              <label>
+                <input type="radio" name="salutation" value="Mr" required />
+                Mr
+              </label>
+              <label>
+                <input type="radio" name="salutation" value="Mrs" /> Mrs
+              </label>
+              <label>
+                <input type="radio" name="salutation" value="Other" /> Other
+              </label>
+            </section>
+          </fieldset>
+
+          <label for="fullname">Full Name*</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            required
+            placeholder="John Adrian Doe Rodriguez"
+          />
+
+          <label for="email">Email Address*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="johndoe@gmail.com"
+          />
+
+          <label for="phone">Phone Number (Optional)</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+31 6 58585858"
+          />
+
+          <label for="subject">Subject*</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Type your subject here"
+            required
+          />
+
+          <label for="message">Message*</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message here"
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <p class="quick-link-name"><strong>Quick Links:</strong></p>
+      <ul class="quick-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="wellbeing-tips.html">Wellbeing Tips</a></li>
+        <li><a href="quick-breaks.html">Quick Breaks</a></li>
+        <li><a href="#">Chill Spots</a></li>
+        <li><a href="#">Workspace Tips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <section class="bottom-section">
+        <figure class="logo">
+          <a href="home.html"
+            ><img
+              alt="Placeholder logo image"
+              class="logo-footer"
+              src="/images/work-balance-logo-white.svg"
+              title="Work Balance Footer Logo"
+          /></a>
+        </figure>
+        <p class="copyright">
+          &copy; 2024 <strong>Work Balance</strong>, All Rights Reserved.
+        </p>
+        <address class="icons">
+          <a href="https://www.facebook.com/"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </address>
+      </section>
+    </footer>
+  </body>
+</html>
