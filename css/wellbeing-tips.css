@@ -293,8 +293,10 @@ nav img {
 }
 
 .section2 article p {
-  text-align: start;
-  .hero-btn {
+    text-align: start;
+}
+
+.hero-btn {
     text-decoration: underline;
     color: #fff;
     margin: 0;
@@ -302,19 +304,17 @@ nav img {
     display: inline-block;
     transition: all 0.3s ease;
     font-weight: 400;
-  }
-  .hero-btn {
     border: none;
     background-color: transparent;
-  }
+}
 
-  .hero-btn:hover {
-    background-color: none;
+.hero-btn:hover {
+    background-color: transparent; /* Use 'transparent' instead of 'none' */
     color: #efeba7;
     cursor: pointer;
     font-weight: bold;
   }
-}
+
 
 @media (max-width: 768px) {
   .section2 {
