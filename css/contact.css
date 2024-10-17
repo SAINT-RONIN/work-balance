@@ -20,20 +20,6 @@ figcaption {
   color: #efeba7;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-::-webkit-scrollbar-track {
-  background-color: var(--dark-color);
-}
-::-webkit-scrollbar-thumb {
-  background-color: #b3bbce;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #808684;
-}
-
 /** Header Section **/
 .header {
   min-height: 50vh;
