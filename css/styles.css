@@ -26,7 +26,7 @@ figcaption {
   min-height: 75vh;
   width: calc(100% - 3.125rem);
   background-image: linear-gradient(rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)),
-    url(/images/hero-banner.webp);
+    url(images/hero-banner.webp);
   background-position: center;
   background-size: cover;
   position: relative;
