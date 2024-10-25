@@ -1,356 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="wellness, work life balance, mental health, remote work, wellbeing"
-    />
-    <meta name="author" content="Leandro Nuñez" />
-    <meta
-      name="description"
-      content="A comprehensive guide for remote workers on maintaining work-life balance and wellbeing."
-    />
-    <title>Wellbeing Tips</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="images/work-balance-favicon.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/wellbeing-tips.css" />
-  </head>
-  <body>
-    <!-- Cookie Banner -->
-    <section class="cookie-banner" aria-label="Cookie Notice">
-      <p>
-        We use cookies to enhance your experience. By continuing to visit this
-        site, you agree to our use of cookies.
-      </p>
-      <button
-        onclick="this.parentElement.style.display='none'"
-        aria-label="Accept Cookies"
-      >
-        Accept Cookies
-      </button>
-    </section>
 
-    <!-- Section 1: Header -->
-    <header class="header">
-      <nav>
-        <a href="index.html">
-          <img
-            src="images/work-balance-logov5.svg"
-            class="logo-navbar"
-            alt="Work Balance Logo"
-            title="Work Balance Logo"
-          />
-        </a>
+<head>
+  <title>Well-being Tips</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="css/wellbeing-tips.css">
+  <link rel="stylesheet" type="text/css" href="css/general-styles.css">
+</head>
 
-        <!-- Hidden checkbox for toggling the menu -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+<body>
+  <!-- HERO SECTION -->
+  <main>
+    <section class="hero-section">
+      <h2 class="visually-hidden">Hero Section</h2>
+      <!-- Visually hidden heading for accessibility -->
+      <section class="hero-content">
+        <!-- Navigation -->
+        <nav class="navbar">
+          <!-- Logo container -->
+          <div class="logo-container">
+            <a href="index.html">
+              <img src="img/work-balance-logov5.svg" class="navbar-logo" alt="Work Balance Logo"
+                title="Work Balance company logo" />
+            </a>
+          </div>
 
-        <!-- Label for the menu button -->
-        <label for="menu-toggle" class="menu-icon">
-          <i class="fa fa-bars" aria-label="Open Menu"></i>
-        </label>
+          <!-- Hidden checkbox for toggling the menu -->
+          <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
 
-        <!-- Navigation links -->
-        <aside class="nav-links" id="navLinks" aria-label="Main Navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="wellbeing-tips.html">Wellbeing Tips</a></li>
-            <li><a href="quick-breaks.html">Quick Breaks</a></li>
-            <li><a href="#">Chill Spots</a></li>
-            <li><a href="#">Workspace Tips</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <label for="menu-toggle" class="close-icon">Close</label>
-        </aside>
-      </nav>
+          <!-- Label for the menu button (Hamburger Menu) -->
+          <label for="menu-toggle" class="navbar-hamburger-icon">
+            <i class="fa fa-bars"></i>
+          </label>
 
-      <section class="text-box">
-        <h1><strong>Wellbeing Tips</strong></h1>
+          <!-- Navigation links -->
+          <aside class="navbar-links-container" id="navbarLinks" aria-label="Main Navigation">
+            <ul class="navbar-links">
+              <li><a href="index.html" class="navbar-link">Home</a></li>
+              <li>
+                <a href="wellbeing-tips.html" class="navbar-link">Wellbeing Tips</a>
+              </li>
+              <li>
+                <a href="quick-breaks.html" class="navbar-link">Quick Breaks</a>
+              </li>
+              <li>
+                <a href="chill-spots.html" class="navbar-link">Chill Spots</a>
+              </li>
+              <li>
+                <a href="workspace-tips.html" class="navbar-link">Workspace Tips</a>
+              </li>
+              <li><a href="contact.html" class="navbar-link">Contact</a></li>
+            </ul>
+            <label for="menu-toggle" class="navbar-close-icon">Close</label>
+          </aside>
+        </nav>
+
+        <!-- Hero Message Container -->
+        <section class="hero-message-container">
+          <h1 class="hero-heading">Well-being Tips</h1>
+        </section>
       </section>
-    </header>
-
-    <!-- Section 2: Burnout Explanation -->
-    <section class="section2">
+    </section>
+  </main>
+  <section class="section-4">
+    <section class="inner-section-4">
       <article>
         <h2>What is burnout?</h2>
         <h3>Understanding Burnout</h3>
         <p>
           Burnout is a state of emotional, physical, and mental exhaustion
-          caused by prolonged <em>stress</em>, often from excessive workload,
-          lack of control, insufficient rewards, work-life imbalance, or a poor
-          work environment, leading to feelings of overwhelm, disconnection, and
-          decreased job performance.
+          resulting from prolonged stress. Common causes include excessive
+          workloads, lack of control, insufficient rewards, work-life
+          imbalance, and toxic work environments. This leads to overwhelming
+          feelings, detachment, and reduced performance at work.
         </p>
         <p>
-          Burnout is tough to handle, and attempting to push through it can
-          actually make things worse. It doesn’t just pose risks to your health
-          like increasing the chances of <strong>depression</strong>,
-          <strong>cardiovascular issues</strong>, and
-          <strong>other health problems</strong>, but it is also
-          counterproductive. The more you force yourself to keep going, the
-          longer it might take to fully recover.
+          Ignoring burnout and continuing to push through can exacerbate the
+          situation, raising the risk of depression, heart-related issues, and
+          other health complications. Instead, it’s important to address
+          burnout early, as the longer you ignore it, the more difficult and
+          lengthy the recovery process may become. Learn more about:
+          burnout, depression, cardiovascular issues, other health problems.
+        </p>
+      </article>
+    </section>
+  </section>
+
+  <section class="split-in-2 reverse white-bg">
+    <section class="container-split">
+      <figure class="picture-box">
+        <img src="img/playing-table-games.webp" alt="Playing table games" title="2 person playing a table game" />
+        <figcaption>
+          Girl using a computer for remote work, showcasing focus and
+          productivity.
+        </figcaption>
+      </figure>
+      <article class="text-box">
+        <h2>Take regular breaks</h2>
+        <p>
+          Taking regular breaks is essential for maintaining both productivity
+          and well-being. Many remote workers tend to sit for long periods
+          without moving, which can negatively affect their physical and
+          mental health. Simple actions like standing, stretching, walking, or
+          changing your environment for a few minutes can relieve tension and
+          improve focus.
         </p>
         <p>
-          <strong>Learn more about:</strong>
-          <a
-            href="https://pubmed.ncbi.nlm.nih.gov/17901431/"
-            target="_blank"
-            class="hero-btn"
-            >depression,</a
-          >
-          <a
-            href="https://pubmed.ncbi.nlm.nih.gov/21584721/"
-            target="_blank"
-            class="hero-btn"
-            >cardiovascular issues,</a
-          >
-          <a
-            href="https://www.nature.com/articles/s41574-019-0228-0"
-            target="_blank"
-            class="hero-btn"
-            >other health problems.</a
-          >
+          One effective way to schedule breaks is through the Pomodoro
+          Technique, which breaks work into intervals. You focus for 25
+          minutes, followed by a 5-minute break. After completing four
+          intervals (or "Pomodoros"), a longer break of 15 to 30 minutes is
+          taken. This structured approach is highly useful for balancing time
+          and energy, promoting productivity, and preventing burnout
+          throughout the workday.
         </p>
       </article>
-      <!-- Divider Section -->
-      <div class="divider"></div>
     </section>
+  </section>
 
-    <!-- Section 3: Managing Burnout -->
-    <section class="section3">
-      <article>
-        <h2>How to Manage Burnout</h2>
+  <section class="split-in-2">
+    <section class="container-split">
+      <figure class="picture-box">
+        <img src="img/boundaries.webp" alt="" srcset="" />
+      </figure>
+      <article class="text-box">
+        <h2>Set clear work-life boundaries</h2>
+        <p>
+          When working from home, it's crucial to establish clear boundaries
+          between your work life and personal life. This separation is key in
+          preventing burnout and ensuring you maintain a healthy balance
+          between your professional and personal activities. I recommend
+          setting aside a specific area in your home dedicated solely to work.
+          This helps in keeping your professional and relaxation spaces
+          distinct.
+        </p>
+        <p>
+          Blending these areas can lead to challenges in mentally
+          disconnecting from work tasks at the end of the day, which can
+          hinder your ability to fully relax and recharge. By clearly defining
+          and respecting these boundaries, you foster a healthier work-life
+          balance, contributing to both personal well-being and professional
+          productivity.
+        </p>
       </article>
     </section>
+  </section>
 
-    <!-- Section 4: Take Regular Breaks -->
-    <section class="section4">
-      <section class="row">
-        <article class="section-col">
-          <h2>Take regular breaks</h2>
-          <p>
-            Taking <em>regular breaks</em> is essential for maintaining both
-            productivity and overall well-being, especially for remote workers
-            who may find it easy to sit for extended periods without moving.
-            When you step away from your work, even for just a few minutes, you
-            allow your mind to reset, reducing mental fatigue and improving
-            focus.
-          </p>
-          <p>
-            One effective method for incorporating regular breaks is the
-            <strong>Pomodoro Technique</strong>, which divides work into
-            intervals. You work for 25 minutes, fully concentrating on the task
-            at hand, followed by a 5-minute break. After completing four
-            intervals (or "Pomodoros"), you take a longer break, usually 15 to
-            30 minutes. This structured system can be incredibly useful for
-            managing time and energy throughout the day.
-          </p>
-          <p>
-            During these breaks, it's important to engage in activities that
-            refresh both your body and mind. For instance, standing up and
-            moving around helps improve circulation, reducing the physical
-            strain that sitting for too long can cause. Walking outside for
-            fresh air, doing some stretches, or practicing a few minutes of
-            mindfulness meditation can restore your energy and focus. Even
-            stepping away to grab a healthy snack or hydrate can make a
-            difference.
-          </p>
-        </article>
-        <figure class="section-col">
-          <img
-            src="images/girl-reading-book.webp"
-            alt="Person reading a book"
-            title="A person reading a book"
-          />
-          <figcaption>Take breaks to reset your mind and body</figcaption>
-        </figure>
-      </section>
+  <section class="split-in-2 reverse white-bg">
+    <section class="container-split">
+      <figure class="picture-box">
+        <img src="img/seek-help-picture1.webp" alt="Playing table games" title="2 person playing a table game" />
+        <figcaption>
+          Girl using a computer for remote work, showcasing focus and
+          productivity.
+        </figcaption>
+      </figure>
+      <article class="text-box">
+        <h2>Seek support from mental health professionals</h2>
+        <p>
+          Asking for help is really important when dealing with burnout and it
+          is an important part of getting better. Remember this: Talking to a
+          therapist can be really helpful for managing stress and strong
+          emotions. They can give you great advice and help you recognize
+          habits that might lead to burnout, and suggest ways to improve them.
+        </p>
+        <p>
+          If you can't see a therapist, talking to friends, family, or
+          coworkers can still make a big difference. Just sharing what you're
+          going through with someone who understands can bring relief and
+          support, making everything easier to handle.
+        </p>
+      </article>
     </section>
+  </section>
 
-    <!-- Section 5: Set Clear Boundaries -->
-    <section class="section5">
-      <section class="row">
-        <figure class="section-col">
-          <img
-            src="images/playing-games.webp"
-            alt="Person playing games"
-            title="A person playing video games"
-          />
-          <figcaption>Setting clear boundaries is key</figcaption>
-        </figure>
-        <article class="section-col">
-          <h2>Set clear work-life boundaries</h2>
-          <p>
-            Setting clear <em>work-life boundaries</em> is crucial for
-            preventing burnout, especially for remote workers who often struggle
-            to separate their professional and personal lives. Without a clear
-            division, it becomes easy to overextend yourself, leading to
-            exhaustion and reduced productivity.
-          </p>
-          <p>
-            Creating a dedicated workspace that is physically separate from
-            areas meant for relaxation also helps reinforce these boundaries.
-            When your work and relaxation spaces blend together, it becomes
-            harder to mentally "switch off" at the end of the day, making it
-            more difficult to recharge. Clearly defining these areas promotes a
-            healthier work-life balance.
-          </p>
-          <p>
-            Communicating these boundaries to colleagues is also important. By
-            letting them know your availability and limits, you set expectations
-            and avoid any unnecessary pressure or last-minute requests outside
-            of your work hours.
-          </p>
-        </article>
-      </section>
+  <section class="split-in-2">
+    <section class="container-split">
+      <figure class="picture-box">
+        <img src="img/girl-reading-book.webp" alt="" srcset="" />
+      </figure>
+      <article class="text-box">
+        <h2>Practice self-care and mindfulness</h2>
+        <p>
+          Practicing self-care and mindfulness is crucial for maintaining
+          mental well-being, especially when managing stress. Self-care can be
+          as simple as ensuring you get enough sleep, eating nutritious meals,
+          or spending time on hobbies that bring joy and relaxation. These
+          small habits help replenish your energy and keep you feeling
+          balanced.
+        </p>
+        <p>
+          Incorporating mindfulness exercises, like meditation, deep
+          breathing, or yoga, can further reduce stress by keeping you focused
+          on the present moment. These practices improve mental clarity and
+          promote a sense of calm. Setting aside time daily to unwind and
+          engage in activities that recharge you physically and mentally is
+          essential for long-term well-being.
+        </p>
+      </article>
     </section>
+  </section>
 
-    <!-- Section 6: Seek Support -->
-    <section class="section4">
-      <section class="row">
-        <article class="section-col">
-          <h2>Seek support from mental health professionals</h2>
-          <p>
-            Reaching out for <em>help</em> is essential in managing burnout,
-            providing an important step toward recovery. Professional therapy
-            offers tools to cope with stress and process overwhelming emotions,
-            making it a highly effective option for many. Therapists can help
-            identify patterns that contribute to burnout and provide strategies
-            for addressing them.
-          </p>
-          <p>
-            If therapy isn’t accessible, turning to trusted friends, family, or
-            colleagues can also make a difference. Simply talking about your
-            experiences and sharing your feelings with someone who understands
-            can offer relief and emotional support, helping to ease the burden.
-          </p>
-          <p>
-            Additionally, support groups and mental health apps can serve as
-            valuable resources, offering connection and practical tools to
-            manage stress when in-person support is unavailable.
-          </p>
-        </article>
-        <figure class="section-col">
-          <img
-            src="images/seek-help-picture1.webp"
-            alt="Person seeking help"
-            title="A person seeking help from a therapist"
-          />
-          <figcaption>Seek professional support when needed</figcaption>
-        </figure>
-      </section>
-    </section>
-
-    <!-- Section 7: Self-Care -->
-    <section class="section5">
-      <section class="row">
-        <figure class="section-col">
-          <img
-            src="images/playing-table-games.webp"
-            alt="Person playing table games"
-            title="A person playing a table game"
-          />
-          <figcaption>
-            Practicing self-care helps maintain mental well-being
-          </figcaption>
-        </figure>
-        <article class="section-col">
-          <h2>Practice self-care and mindfulness</h2>
-          <p>
-            Practicing <em>self-care</em> and <em>mindfulness</em> is crucial
-            for maintaining mental well-being, especially when managing stress.
-            Self-care can be as simple as ensuring you get enough sleep, eating
-            nutritious meals, or spending time on hobbies that bring joy and
-            relaxation. These small habits help replenish your energy and keep
-            you feeling balanced.
-          </p>
-          <p>
-            Incorporating mindfulness exercises, like meditation, deep
-            breathing, or yoga, can further reduce stress by keeping you focused
-            on the present moment. These practices improve mental clarity and
-            promote a sense of calm. Setting aside time daily to unwind and
-            engage in activities that recharge you physically and mentally is
-            essential for long-term well-being.
-          </p>
-          <p>
-            Additionally, self-care involves setting boundaries and knowing when
-            to step back. Giving yourself time to rest and recharge is necessary
-            for maintaining your energy and well-being.
-          </p>
-        </article>
-      </section>
-      <!-- Divider -->
-      <div class="divider"></div>
-    </section>
-
-    <!-- Section 8: Dealing with Isolation -->
-    <section class="section2">
-      <article>
+  <section class="isolation">
+    <section class="inner-isolation">
+      <article class="isolation-text">
         <h2>Dealing with Isolation</h2>
-        <h3>The Impact of Isolation on Mental Health</h3>
         <p>
-          Remote work can often lead to feelings of loneliness and isolation due
-          to the lack of daily interactions found in traditional office
-          settings. Without face-to-face connections, it’s easy to feel
-          disconnected from colleagues and support systems, which can impact
-          your mental well-being.
+          To overcome the sense of isolation, it's crucial to maintain social
+          connections. One effective strategy is to proactively plan and
+          organize virtual coffee meetings with coworkers or friends.
         </p>
         <p>
-          This sense of disconnection, if left unaddressed, may take a toll on
-          your overall mental health. It's important to find ways to stay
-          connected, whether through virtual meetings, social groups, or simply
-          reaching out to friends and family.
+          These relaxed and informal discussions can simulate the spontaneous
+          interactions that occur in a physical office environment, thereby
+          alleviating the impact of loneliness.
+        </p>
+        <h3>How to Combat Isolation</h3>
+        <p>
+          <strong><em>Here are some practical tips to help combat isolation:</em></strong>
         </p>
       </article>
-      <!-- Divider -->
-      <div class="divider"></div>
-    </section>
-
-    <!-- Section 9: Combating Isolation -->
-    <section class="blocks">
-      <h2>How to Combat Isolation</h2>
-      <p>Here are some practical tips to help combat isolation:</p>
-
-      <section class="row">
-        <article class="blocks-col">
-          <h3>1. Schedule Virtual Coffee Chats</h3>
+      <section class="isolation-blocks">
+        <article class="block-1">
+          <p><strong>1. Schedule Virtual Coffee Chats</strong></p>
           <p>
-            Stay socially connected by arranging regular virtual coffee breaks
+            Stay socially connected by making regular virtual coffee breaks
             with colleagues or friends. These informal conversations can mimic
-            the casual chats you’d have in an office, helping to reduce feelings
-            of loneliness.
+            the casual chats you’d have in an office, helping to reduce
+            feelings of loneliness.
           </p>
         </article>
-
-        <article class="blocks-col">
-          <h3>2. Join Online Communities with Shared Interests</h3>
+        <article class="block-2">
           <p>
-            Engage in online groups or forums where people share similar hobbies
-            or professional interests. Platforms like Slack or Reddit provide
+            <strong>2. Join Online Communities with Shared Interests</strong>
+          </p>
+          <p>
+            Join online groups or forums where people share similar hobbies or
+            professional interests. Platforms like Slack or Reddit provide
             spaces to connect, share ideas, and feel part of a community.
           </p>
         </article>
-
-        <article class="blocks-col">
-          <h3>3. Take Part in Offline Activities</h3>
+        <article class="block-3">
+          <p><strong>3. Take Part in Offline Activities</strong></p>
           <p>
-            Step away from the screen by participating in local events, fitness
-            classes, or hobby groups. These in-person activities allow you to
-            connect face-to-face and break the isolation of remote work.
+            Step away from the screen by participating in local events,
+            fitness classes, or hobby groups. These in-person activities allow
+            you to connect face-to-face and break the isolation of remote
+            work.
           </p>
         </article>
-
-        <article class="blocks-col">
-          <h3>4. Work from Co-Working Spaces</h3>
+      </section>
+      <section class="isolation-blocks">
+        <article class="block-1">
+          <p><strong>4. Work from Co-Working Spaces</strong></p>
           <p>
             Co-working spaces offer an opportunity to work alongside others,
             even if you’re working independently. The shared environment can
@@ -358,62 +263,63 @@
             where you can meet new people.
           </p>
         </article>
-
-        <article class="blocks-col">
-          <h3>5. Set Up a Buddy System</h3>
+        <article class="block-2">
+          <p>
+            <strong>5. Set Up a Buddy System</strong>
+          </p>
           <p>
             Partner with a colleague or friend to check in on each other
             regularly. Having someone to share your thoughts and experiences
             with can provide support and foster a sense of connection.
           </p>
         </article>
-
-        <article class="blocks-col">
-          <h3>6. Volunteer in Your Community</h3>
+        <article class="block-3">
+          <p><strong>6. Volunteer in Your Community</strong></p>
           <p>
-            Get involved in local volunteering opportunities. Helping others not
-            only makes a positive impact on your community but also allows you
-            to meet new people and build connections.
+            Get involved in local volunteering opportunities. Helping others
+            not only makes a positive impact on your community but also allows
+            you to meet new people and build connections.
           </p>
         </article>
       </section>
     </section>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p class="quick-link-name"><strong>Quick Links:</strong></p>
-      <ul class="quick-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="wellbeing-tips.html">Wellbeing Tips</a></li>
-        <li><a href="quick-breaks.html">Quick Breaks</a></li>
-        <li><a href="#">Chill Spots</a></li>
-        <li><a href="#">Workspace Tips</a></li>
-        <li><a href="#">Contact</a></li>
+  <footer class="footer">
+    <nav class="quick-links">
+      <p>
+        <strong><em>Quick Breaks:</em></strong>
+      </p>
+      <ul class="footer-navbar-links">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li>
+          <a href="wellbeing-tips.html" class="navbar-link">Wellbeing Tips</a>
+        </li>
+        <li>
+          <a href="quick-breaks.html" class="navbar-link">Quick Breaks</a>
+        </li>
+        <li>
+          <a href="chill-spots.html" class="navbar-link">Chill Spots</a>
+        </li>
+        <li>
+          <a href="work-space-tips.html" class="navbar-link">Workspace Tips</a>
+        </li>
+        <li><a href="contact.html" class="navbar-link">Contact</a></li>
       </ul>
-      <section class="bottom-section">
-        <figure class="logo">
-          <a href="index.html">
-            <img
-              alt="Placeholder logo image"
-              class="logo-footer"
-              src="images/work-balance-logo-white.svg"
-              title="Work Balance Logo"
-            />
-          </a>
-        </figure>
-        <p class="copyright">
-          &copy; 2024 <strong>Work Balance</strong>, All Rights Reserved.
-        </p>
+    </nav>
+    <section class="copyright">
+      <figure class="footer-logo">
+        <img src="img/work-balance-logov5.svg" alt="" srcset="" />
+      </figure>
+      <p class="copyright-text">
+        &copy; 2024 <strong>Work Balance</strong>, All Rights Reserved.
+      </p>
+      <address class="icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+      </address>
+    </section>
+  </footer>
+</body>
 
-        <address class="icons">
-          <a href="https://www.facebook.com/" aria-label="Facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="https://www.instagram.com/" aria-label="Instagram"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </address>
-      </section>
-    </footer>
-  </body>
 </html>

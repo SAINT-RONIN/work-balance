@@ -1,0 +1,133 @@
+/* General Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Root font size is typically 16px by default. Adjust it if needed */
+html {
+  font-size: 100%; /* 1 rem = 16px */
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.3125rem; /* 85px / 16 = 5.3125rem */
+  font-weight: 700;
+  line-height: normal;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.125rem; /* 50px / 16 = 3.125rem */
+  font-weight: 700;
+  line-height: normal;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 46.2px */
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem; /* 20px / 16 = 1.25rem */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56; /* Maintain the 156% line height */
+}
+
+li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem; /* 20px / 16 = 1.25rem */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.56;
+}
+
+.hero-button {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem; /* 20px / 16 = 1.25rem */
+  font-weight: 500;
+  display: flex;
+  text-decoration: none;
+  padding: 0.9375rem 3.125rem; /* 15px 50px */
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* 10px */
+  border-radius: 0.9375rem; /* 15px */
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent; /* Default background */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+/* Hover effect */
+.hero-button:hover {
+  border: 2px solid #023020;
+  background-color: #023020; /* Dark green background on hover */
+  color: #fff; /* Text remains white */
+}
+
+.general-button {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.25rem; /* 20px / 16 = 1.25rem */
+  font-weight: 500;
+  display: flex;
+  text-decoration: none;
+  padding: 0.9375rem 3.125rem; /* 15px 50px */
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* 10px */
+  border-radius: 0.9375rem; /* 15px */
+  border: 2px solid #023020;
+  color: #023020;
+  background-color: transparent; /* Default background */
+  transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.general-button:hover {
+  border: 2px solid #023020;
+  background-color: #023020; /* Dark green background on hover */
+  color: #fff;
+}
+
+/* Media Query for Mobile Devices (Smartphones <= 768px) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem; /* 40px / 16 */
+  }
+
+  h2 {
+    font-size: 1.875rem; /* 30px / 16 */
+  }
+
+  p {
+    font-size: 1.125rem; /* 18px / 16 */
+    line-height: 1.56; /* Keep line height proportional */
+  }
+
+  button,
+  .hero-button {
+    font-size: 1.125rem; /* 18px / 16 */
+    padding: 0.625rem 2.5rem; /* 10px 40px */
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
