@@ -150,7 +150,7 @@ form input[type="radio"]:checked::before {
   border: none;
 }
 
-form button {
+form input[type="submit"] {
   width: 100%;
   padding: 20px;
   background-color: #a4c694;
@@ -159,6 +159,12 @@ form button {
   border-radius: 50px;
   font-size: 1.25rem;
   cursor: pointer;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+form input[type="submit"]:hover {
+  background-color: #294335;
+  color: #a4c694;
 }
 
 /* Responsive adjustments for smaller screens */
