@@ -10,7 +10,7 @@
         content="Contact us for questions, feedback, and suggestions to enhance your experience with Work Balance.">
     <meta name="keywords" content="contact, work balance, feedback, suggestions, inquiries">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="img/work-balance-favicon.png" alt="company logo favicon">
+    <link rel="icon" href="img/work-balance-favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="stylesheet" type="text/css" href="css/general-styles.css">
@@ -18,29 +18,18 @@
 
 <body>
     <main>
-        <section class="hero-section">
-            <h2 class="visually-hidden">Hero Section</h2>
-            <!-- Visually hidden heading for accessibility -->
+        <header class="hero-section">
             <section class="hero-content">
-                <!-- Navigation -->
+                <h2 class="visually-hidden">.</h2>
                 <nav class="main-navigation">
-                    <!-- Logo container updated to header for semantic clarity -->
-                    <header class="brand-logo">
+                    <figure class="brand-logo">
                         <a href="index.html">
                             <img src="img/work-balance-logov5.svg" class="logo-image" alt="Work Balance Logo"
                                 title="Work Balance company logo">
                         </a>
-                    </header>
-
-                    <!-- Hidden checkbox for toggling the menu -->
+                    </figure>
                     <input type="checkbox" id="menu-toggle-checkbox" class="toggle-checkbox">
-
-                    <!-- Label for the menu button (Hamburger Menu) -->
-                    <label for="menu-toggle-checkbox" class="menu-toggle-icon">
-                        <i class="fa fa-bars"></i>
-                    </label>
-
-                    <!-- Navigation links -->
+                    <label for="menu-toggle-checkbox" class="menu-toggle-icon"><i class="fa fa-bars"></i></label>
                     <aside class="navigation-links-wrapper" id="mainNavigationLinks" aria-label="Primary Navigation">
                         <ul class="navigation-links">
                             <li><a href="index.html" class="navigation-item">Home</a></li>
@@ -53,28 +42,25 @@
                         <label for="menu-toggle-checkbox" class="close-menu-label">Close</label>
                     </aside>
                 </nav>
-
-                <!-- Hero Message Container -->
-                <section class="hero-message-container">
-                    <h1 class="hero-heading">Contact Us</h1>
-                    <p>
-                        <strong>If you have any questions or would like to share feedback and suggestions for improving
-                            the website, feel free to reach out to us.</strong>
-                    </p>
-                </section>
+                <h1 class="hero-heading">Contact Us</h1>
             </section>
-        </section>
+        </header>
     </main>
 
+    <!-- CONTACT SECTION -->
     <section class="contact-section">
+        <h2 class="visually-hidden">.</h2>
         <section class="contact-container">
-            <section class="picture">
+            <h2 class="visually-hidden">.</h2>
+            <figure class="picture">
                 <img src="img/Contact-Page-picture.webp" alt="Contact page visual showing people connecting">
-            </section>
+            </figure>
+
+            <!-- FORM SECTION -->
             <form class="form">
                 <fieldset class="radio-group-container">
                     <legend>Choose your salutation*</legend>
-                    <section class="radio-group">
+                    <fieldset class="radio-group">
                         <label>
                             <input type="radio" name="salutation" value="Mr" required>
                             Mr
@@ -88,7 +74,7 @@
                         <label>
                             <input type="radio" name="salutation" value="Other"> Other
                         </label>
-                    </section>
+                    </fieldset>
                 </fieldset>
 
                 <fieldset class="form-group">
@@ -121,6 +107,7 @@
         </section>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <nav class="quick-links">
             <p><strong><em>Quick Breaks:</em></strong></p>
@@ -134,8 +121,10 @@
             </ul>
         </nav>
         <section class="copyright">
+            <h2 class="visually-hidden">.</h2>
             <figure class="footer-logo">
-                <img src="img/work-balance-logov5.svg" alt="Work Balance company logo in footer">
+                <img src="img/work-balance-logov5.svg" alt="Work Balance company logo in footer"
+                    title="Work Balance logo in footer">
                 <figcaption>Work Balance Logo</figcaption>
             </figure>
             <p class="copyright-text">

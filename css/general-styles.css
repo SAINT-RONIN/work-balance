@@ -19,6 +19,7 @@ h1 {
   font-size: 5.3125rem; /* 85px / 16 = 5.3125rem */
   font-weight: 700;
   line-height: normal;
+  padding: 120px 0px;
 }
 
 h2 {
@@ -128,6 +129,7 @@ li {
   margin: -1px;
   padding: 0;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   border: 0;
+  display: none;
+  display: hidden;
 }

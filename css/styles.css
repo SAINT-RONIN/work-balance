@@ -47,7 +47,7 @@
   align-self: stretch;
   border-radius: 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("img/hero-banner.webp") center / cover no-repeat;
+    url("/img/hero-banner.webp") center / cover no-repeat;
 }
 
 /* Buttons layout */
@@ -176,13 +176,13 @@
 
   /* For the overlay effect */
 .navigation-links-wrapper {
-  display: none; /* Hidden by default */
-  position: fixed; /* Position fixed for full-screen overlay */
+  display: none;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff; /* Dark background with opacity */
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -197,9 +197,9 @@
 
 /* Style individual navigation items in the overlay */
 .navigation-links-wrapper .navigation-item {
-  color: #000; /* White text for visibility */
-  font-size: 24px; /* Larger font size for overlay */
-  margin: 15px 0; /* Space between each link */
+  color: #000;
+  font-size: 24px;
+  margin: 15px 0;
   text-decoration: none;
 }
 
