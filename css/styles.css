@@ -223,6 +223,14 @@ article {
   font-size: 35px;
 }
 
+.introduction p {
+  font-size: 1.25em;
+}
+
+.introduction .inner-introduction article h2 {
+  text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
   .introduction {
     padding: 0px 20px;
