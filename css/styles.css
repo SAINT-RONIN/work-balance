@@ -112,6 +112,12 @@
   gap: 18px;
 }
 
+.navigation-links a:hover {
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
 .navigation-item {
   color: #023020; /* Dark Green */
   font-size: 16px;
@@ -317,15 +323,20 @@ article {
   align-self: stretch;
 }
 
+.introduction p::first-letter {
+  font-weight: 700;
+  font-size: 35px;
+}
+
 @media (max-width: 768px) {
   .introduction {
     padding: 0px 20px;
   }
   .inner-introduction {
-    padding: 35px 0px 30px;
-    border-radius: 35;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
+    padding: 35px 0 30px;
+    border-radius: 35px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
 }
 
@@ -376,9 +387,9 @@ article {
   }
   .inner-section-3 {
     padding: 40px 20px;
-    border-radius: 35;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 35px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   .general-buttons {
@@ -426,7 +437,7 @@ article {
   }
   .inner-section-4 {
     padding: 40px 20px;
-    border-radius: 35;
+    border-radius: 35px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-top: 2px solid #000;
@@ -453,7 +464,7 @@ article {
   align-items: stretch; /* Ensure both boxes stretch equally */
 
   width: 100%;
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 .picture-box {
@@ -492,7 +503,7 @@ article {
 
 .white-bg .container-split {
   background-color: #fff;
-  height: -webkit-fill-available;
+  height: 100%;
 }
 
 /* Responsive design (optional) */
@@ -618,7 +629,9 @@ article {
 }
 
 .footer-navbar-links a:hover {
-  border-bottom: solid 2px #000;
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
 }
 
 .copyright {
