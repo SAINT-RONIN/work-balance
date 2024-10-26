@@ -9,7 +9,7 @@
   align-self: stretch;
   border-radius: 40px;
   background: linear-gradient(rgba(148, 49, 49, 0.274), rgba(0, 0, 0, 0.199)),
-    url("/img/Joost.webp") center / cover no-repeat;
+    url("../img/Joost.webp") center / cover no-repeat;
 }
 
 @media (max-width: 768px) {
