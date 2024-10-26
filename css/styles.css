@@ -125,6 +125,65 @@
   display: none;
 }
 
+/* Show the hamburger menu and set up overlay at 1220px */
+@media (max-width: 1220px) {
+
+  .main-navigation {
+    justify-content: space-between;
+  }
+
+  .navigation-links {
+    flex-direction: column;
+  }
+
+  .menu-toggle-icon {
+    display: block; /* Show the hamburger icon */
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  /* Hide the navigation links wrapper by default */
+  .navigation-links-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000; /* Higher z-index for overlay */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+
+  /* Show navigation when checkbox is checked */
+  .toggle-checkbox:checked + .menu-toggle-icon + .navigation-links-wrapper {
+    display: flex;
+  }
+
+  /* Style individual navigation items in the overlay */
+  .navigation-links-wrapper .navigation-item {
+    color: #000;
+    font-size: 24px;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+
+  /* Close button in overlay */
+  .close-menu-label {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-section {
@@ -240,7 +299,7 @@
   gap: 20px;
   align-self: stretch;
   border-radius: 40px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 /* Article */
@@ -622,5 +681,80 @@ article {
     flex-direction: column;
     gap: 10px;
     text-align: center;
+  }
+}
+
+
+
+/** COOKIES **/
+/* Centered Box Styling */
+.centered-box {
+  width: 1000px;
+  height: 500px;
+  padding: 20px;
+  background-color: #a4c694;
+  color: #023020;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border: 10px solid #023020;
+  text-align: center;
+  z-index: 99999;
+}
+
+.centered-box button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button-group > .general-button {
+  padding: 15px 90px;
+}
+
+/* Media query for screens 1200px and smaller */
+@media (max-width: 1200px) {
+  .centered-box {
+    width: 800px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 30px;
+  }
+
+  .button-group > .general-button {
+    padding: 12px 70px;
+  }
+}
+
+/* Media query for screens 768px and smaller (mobile layout) */
+@media (max-width: 768px) {
+  .centered-box {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 10px;
+  }
+
+  .button-group > .general-button {
+    padding: 10px 40px;
+    font-size: 0.9em;
   }
 }

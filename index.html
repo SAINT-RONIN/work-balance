@@ -22,7 +22,7 @@
   <main>
     <header class="hero-section">
       <section class="hero-content">
-        <h2 class="visually-hidden">Hello</h2>
+        <h2 class="visually-hidden">.</h2>
         <nav class="main-navigation">
           <figure class="brand-logo">
             <a href="index.html">
@@ -239,6 +239,22 @@
       </address>
     </section>
   </footer>
+
+  <!-- COOKIES -->
+  <article id="centeredBox" class="centered-box">
+    <h2>We use cookies</h2>
+    <p>This website use cookies to ensure you get the best experience on our website.</p>
+    <section class="button-group">
+      <h2 class="visually-hidden">.</h2>
+      <button class="general-button" id="yesButton">Yes</button>
+      <button class="general-button" id="noButton">No</button>
+    </section>
+  </article>
+
+  <!-- JAVASCRIPT FOR THE COOKIES BOX YES OR NO -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => ["yesButton", "noButton"].forEach(id => document.getElementById(id).onclick = () => centeredBox.style.display = "none"));
+  </script>
 </body>
 
 </html>
