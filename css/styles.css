@@ -1,11 +1,9 @@
-/* Hover effect for buttons */
 .hero-button:hover {
   border: 2px solid #023020;
-  background-color: #023020; /* Dark green background on hover */
-  color: #fff; /* Text remains white */
+  background-color: #023020;
+  color: #fff;
 }
 
-/* Hero Section Container for Responsiveness */
 .hero-message-container {
   padding: 120px 0;
   display: flex;
@@ -23,14 +21,13 @@
   box-sizing: border-box;
 }
 
-/* Hero section specific styles for h1 and p */
 .hero-section h1 {
-  color: #fff; /* Make the h1 text white */
+  color: #fff;
   text-align: center;
 }
 
 .hero-section p {
-  color: #fff; /* Make the paragraph text white */
+  color: #fff;
   font-size: 25px;
   font-weight: 700;
   text-align: center;
@@ -86,10 +83,6 @@
   box-sizing: border-box;
   width: 100%;
   border-radius: 25px;
-}
-
-.toggle-checkbox {
-  display: none;
 }
 
 .menu-toggle-icon {
@@ -364,7 +357,7 @@ article {
   padding: 100px 80px;
   border-radius: 40px;
   background: #a4c694;
-  align-items: stretch; /* Ensure both boxes stretch equally */
+  align-items: stretch;
 
   width: 100%;
   height: 100%;
@@ -372,7 +365,7 @@ article {
 
 .picture-box {
   flex: 1;
-  height: 100%; /* Keep height consistent with the text-box */
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,13 +374,13 @@ article {
 
 .picture-box img {
   width: 100%;
-  height: 100%; /* Ensure image fills the height of picture-box */
+  height: 100%;
   object-fit: cover;
   border-radius: 40px;
 }
 
 .picture-box figcaption {
-  margin-top: 10px; /* Space between the image and caption */
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -397,7 +390,7 @@ article {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  height: 100%; /* Match the height with picture-box */
+  height: 100%;
 }
 
 .reverse .container-split {
@@ -409,17 +402,16 @@ article {
   height: 100%;
 }
 
-/* Responsive design (optional) */
 @media (max-width: 768px) {
   .split-in-2 {
-    height: auto; /* Adjust height for mobile */
+    height: auto;
     padding: 20px 0px;
   }
   .container-split {
     flex-direction: column-reverse;
     gap: 40px;
     padding: 20px;
-    height: auto; /* Allow auto height on smaller screens */
+    height: auto;
     padding: 20px;
   }
 
@@ -427,11 +419,11 @@ article {
     flex-direction: column-reverse;
     gap: 40px;
     padding: 20px;
-    height: auto; /* Allow auto height on smaller screens */
+    height: auto;
   }
 
   .picture-box {
-    height: auto; /* Adjust height on mobile */
+    height: auto;
   }
 
   .picture-box img {
@@ -498,11 +490,10 @@ article {
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align for a balanced layout */
+  align-items: center;
   width: 100%;
-  /* Max width for centered alignment */
-  padding: 20px 120px; /* Reduce padding for better responsiveness */
-  margin: 0 auto; /* Center footer content on the page */
+  padding: 20px 120px;
+  margin: 0 auto;
 }
 
 .quick-links {
@@ -511,8 +502,8 @@ article {
   flex-direction: column;
   align-items: center;
   gap: 9px;
-  border-top: 2px solid #000; /* Define border width and style */
-  padding-top: 15px; /* Space between border and links */
+  border-top: 2px solid #000;
+  padding-top: 15px;
 }
 
 .footer-navbar-links {
@@ -552,7 +543,7 @@ article {
 
 .footer-logo img {
   width: 132px;
-  height: auto; /* Auto height to maintain aspect ratio */
+  height: auto;
 }
 
 .icons {
