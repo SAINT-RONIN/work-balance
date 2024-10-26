@@ -167,6 +167,30 @@ form input[type="submit"]:hover {
   color: #a4c694;
 }
 
+
+/** TABLE **/
+
+.table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  table-layout: fixed;
+}
+
+.table table, th {
+  border:1px solid black;
+  padding: 20px 20px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .contact-section {

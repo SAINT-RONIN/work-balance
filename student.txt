@@ -1,0 +1,5 @@
+Student name: Leandro A Nuñez Berroa
+Student number: 731427
+Student class: IT1B
+GitHub Repository: https://github.com/SAINT-RONIN/work-balance
+GitHub Pages URL: https://saint-ronin.github.io/work-balance/

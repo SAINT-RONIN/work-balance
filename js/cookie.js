@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded", () => ["yesButton", "noButton"].forEach(id => document.getElementById(id).onclick = () => centeredBox.style.display = "none"));
