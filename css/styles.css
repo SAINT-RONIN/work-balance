@@ -433,7 +433,7 @@ article {
   }
 }
 
-/** ------------------------------------------- **/
+/** Split Container for both split right and split left **/
 .split-in-2 {
   display: flex;
   width: 100%;
