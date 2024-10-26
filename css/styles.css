@@ -127,22 +127,23 @@
 
 /* Show the hamburger menu and set up overlay at 1220px */
 @media (max-width: 1220px) {
-
   .main-navigation {
     justify-content: space-between;
   }
 
+  /* Stack navigation links vertically */
   .navigation-links {
     flex-direction: column;
   }
 
+  /* Display hamburger icon */
   .menu-toggle-icon {
-    display: block; /* Show the hamburger icon */
+    display: block;
     font-size: 25px;
     cursor: pointer;
   }
 
-  /* Hide the navigation links wrapper by default */
+  /* Hide navigation by default, set up overlay styling */
   .navigation-links-wrapper {
     display: none;
     position: fixed;
@@ -154,16 +155,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1000; /* Higher z-index for overlay */
-    transition: opacity 0.3s ease; /* Smooth transition */
+    z-index: 1000;
+    transition: opacity 0.3s ease;
   }
 
-  /* Show navigation when checkbox is checked */
+  /* Display navigation when checkbox is checked */
   .toggle-checkbox:checked + .menu-toggle-icon + .navigation-links-wrapper {
     display: flex;
   }
 
-  /* Style individual navigation items in the overlay */
+  /* Style navigation items in overlay */
   .navigation-links-wrapper .navigation-item {
     color: #000;
     font-size: 24px;
@@ -171,7 +172,7 @@
     text-decoration: none;
   }
 
-  /* Close button in overlay */
+  /* Close button styling */
   .close-menu-label {
     display: block;
     position: absolute;
@@ -183,14 +184,13 @@
   }
 }
 
-
-/* Responsive Adjustments */
+/* Additional adjustments for 768px and below */
 @media (max-width: 768px) {
   .hero-section {
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
   }
 
@@ -202,20 +202,24 @@
     justify-content: space-between;
   }
 
+  /* Display hamburger icon on small screens */
   .menu-toggle-icon {
     display: block;
     font-size: 25px;
   }
 
+  /* Hide navigation wrapper by default */
   .navigation-links-wrapper {
     display: none;
   }
 
+  /* Show navigation when checkbox is checked */
   .toggle-checkbox:checked + .menu-toggle-icon + .navigation-links-wrapper {
     display: flex;
     flex-direction: column;
   }
 
+  /* Close button styling */
   .close-menu-label {
     display: block;
   }
@@ -233,51 +237,53 @@
     gap: 15px;
   }
 
-  /* For the overlay effect */
-.navigation-links-wrapper {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1000; /* Higher z-index for overlay */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  /* Set up overlay styling */
+  .navigation-links-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Display overlay when checkbox is checked */
+  .toggle-checkbox:checked + .menu-toggle-icon + .navigation-links-wrapper {
+    display: flex;
+  }
+
+  /* Style navigation items in overlay */
+  .navigation-links-wrapper .navigation-item {
+    color: #000;
+    font-size: 24px;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+
+  /* Close button styling */
+  .close-menu-label {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Stack navigation links and add gap */
+  .navigation-links {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
-/* Show the overlay when the checkbox is checked */
-.toggle-checkbox:checked + .menu-toggle-icon + .navigation-links-wrapper {
-  display: flex;
-}
-
-/* Style individual navigation items in the overlay */
-.navigation-links-wrapper .navigation-item {
-  color: #000;
-  font-size: 24px;
-  margin: 15px 0;
-  text-decoration: none;
-}
-
-/* Close button */
-.close-menu-label {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  color: #000;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.navigation-links {
-  flex-direction: column;
-  gap: 40px;
-}
-}
 
 
 /* Section introduction Container */
