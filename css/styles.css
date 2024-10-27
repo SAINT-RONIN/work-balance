@@ -243,9 +243,10 @@ a:hover {
   border-radius: 25px;
 }
 
-.menu-toggle-icon {
+.hamburger-bars {
   display: none;
 }
+
 
 .navigation-links-wrapper {
   display: flex;
@@ -285,7 +286,7 @@ a:hover {
   }
 
   /* Display hamburger icon */
-  .menu-toggle-icon {
+  .hamburger-bars {
     display: block;
     font-size: 25px;
     cursor: pointer;
@@ -318,7 +319,7 @@ a:hover {
   }
 
   /* Display hamburger icon on small screens */
-  .menu-toggle-icon {
+  .hamburger-bars {
     display: block;
     font-size: 25px;
   }
@@ -743,12 +744,14 @@ article {
   color: black;
 }
 
-.fab.fa-facebook-f {
-  color: #000;
+.facebook {
+  text-decoration: none;
+  font-size: 20px;
 }
 
-.fab.fa-instagram {
-  color: #000;
+.instagram {
+  text-decoration: none;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
