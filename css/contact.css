@@ -29,8 +29,8 @@
   }
 }
 
-/** Contact Section **/
 
+/** Contact Section **/
 .contact-section {
   display: flex;
   width: 100%;
@@ -157,6 +157,8 @@ form input[type="submit"]:hover {
   display: flex;
   justify-content: center;
   table-layout: fixed;
+  padding: 0 40px;
+  align-items: center;
 }
 
 .table table, th {
@@ -182,12 +184,12 @@ form input[type="submit"]:hover {
   background-color: #FFF;
 }
 
-.cat-vibing {
+.take-care {
   float: right;
   margin-left: 20px;
 }
 
-.cat-dancing {
+.take-care-picture {
   border-radius: 40px;
 }
 
@@ -213,7 +215,7 @@ form input[type="submit"]:hover {
     padding: 0px 20px;
   }
 
-  .cat-vibing {
+  .take-care {
     float: none;
     margin: 20px auto;
   }

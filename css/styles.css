@@ -224,7 +224,7 @@ article {
 }
 
 .introduction p {
-  font-size: 1.25em;
+  font-size: 1.25em; /* which is supposed to be close to 20px */
 }
 
 .introduction .inner-introduction article h2 {
