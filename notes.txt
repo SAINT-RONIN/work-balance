@@ -1,0 +1,10 @@
+1. The "Prettier" extension. Add trailing slashes. It's not marked as an error or warning in W3 Validator. However, This is something good to know. 
+I avoided using that extension in order to avoid being marked as inssuficient for the W3 Validator. The extension was recommended by the insturctur itself.
+
+2. The assessment says the following " Uses pseudo-class nth-child to color the even horizontal lines the background color #CFF and 
+odd lines #FFF from a table."
+
+I don't have any tables in my FIGMA DESIGN. So I created one below the contact section in "contact page" I know it is not part of my design. 
+However, I did this to be compliant with the assessment.
+
+3. 

@@ -30,7 +30,7 @@ h2 {
 
 h3 {
   font-family: Montserrat;
-  font-size: 33px;
+  font-size: 2.0625rem; /* 33px / 16 = 2.0625rem */
   font-style: normal;
   font-weight: 700;
   line-height: 140%; /* 46.2px */
@@ -69,6 +69,11 @@ a:hover {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.hero-section h1 {
+  color: #fff;
+  text-align: center;
+}
+
 /* Transition for when I hover it become a bit bigger (A grow effect) */
 .icons a:hover i {
   transform: scale(1.2);
@@ -85,7 +90,6 @@ a:hover {
   padding: 0.9375rem 3.125rem; /* 15px 50px */
   justify-content: center;
   align-items: center;
-  gap: 0.625rem; /* 10px */
   border-radius: 0.9375rem; /* 15px */
   border: 2px solid #fff;
   color: #fff;
@@ -109,7 +113,6 @@ a:hover {
   padding: 0.9375rem 3.125rem; /* 15px 50px */
   justify-content: center;
   align-items: center;
-  gap: 0.625rem; /* 10px */
   border-radius: 0.9375rem; /* 15px */
   border: 2px solid #023020;
   color: #023020;
@@ -125,6 +128,7 @@ a:hover {
 
 /* Media Query for Mobile Devices (Smartphones <= 768px) */
 @media (max-width: 768px) {
+
   h1 {
     font-size: 2.5rem; /* 40px / 16 */
   }
@@ -143,6 +147,7 @@ a:hover {
     font-size: 1.125rem; /* 18px / 16 */
     padding: 0.625rem 2.5rem; /* 10px 40px */
   }
+
 }
 
 .visually-hidden {
@@ -157,6 +162,7 @@ a:hover {
 }
 
 /** --------------- END OF GENERAL STYLES --------------- **/
+
 
 
 /** --------------- HOME PAGE --------------- **/
@@ -178,16 +184,18 @@ a:hover {
   box-sizing: border-box;
 }
 
-.hero-section h1 {
+.home-page .hero-content > h1 {
   color: #fff;
   text-align: center;
+  padding: 100px 0 40px 0;
 }
 
-.hero-section p {
+.hero-section .hero-content > p {
   color: #fff;
   font-size: 25px;
   font-weight: 700;
   text-align: center;
+  padding: 0 0 30px 0;
 }
 
 .hero-content {
@@ -197,7 +205,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   align-self: stretch;
   border-radius: 40px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -207,9 +214,10 @@ a:hover {
 /* Buttons layout */
 .hero-buttons {
   display: flex;
-  gap: 20px; /* Space between the buttons */
   justify-content: center; /* Align buttons in the center */
   align-items: center;
+  gap: 18px;
+  padding: 0 0 100px 0;
 }
 
 /* Logo Container Styles */
@@ -217,7 +225,6 @@ a:hover {
   display: flex;
   padding: 10px;
   align-items: center;
-  gap: 10px;
 }
 
 /* Logo Styles */
@@ -235,7 +242,6 @@ a:hover {
   display: flex;
   padding: 0px 60px;
   align-items: center;
-  gap: 40px;
   background-color: #fff;
   box-sizing: border-box;
   width: 100%;
@@ -250,7 +256,6 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 18px;
   flex: 1;
 }
 
@@ -283,6 +288,7 @@ a:hover {
 
 /* Show the hamburger menu and set up overlay at 1220px */
 @media (max-width: 1220px) {
+
   .main-navigation {
     justify-content: space-between;
   }
@@ -294,14 +300,16 @@ a:hover {
     cursor: pointer;
   }
 
-  /* Hide navigation by default, set up overlay styling */
+  /* Hide navigation by default */
   .navigation-links-wrapper {
     display: none;
   }
+
 }
 
 /* media queries for 768px */
 @media (max-width: 768px) {
+
   .hero-section {
     display: flex;
     width: 100%;
@@ -341,6 +349,7 @@ a:hover {
     flex-direction: column;
     gap: 15px;
   }
+
 }
 
 /** HOME PAGE INTRODUCTION SECTION **/
@@ -361,7 +370,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
   align-self: stretch;
   border-radius: 40px;
   background-color: #fff;
@@ -372,7 +380,6 @@ article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
   align-self: stretch;
 }
 
@@ -382,7 +389,7 @@ article {
 }
 
 .introduction p {
-  font-size: 1.25em; /* which is supposed to be close to 20px */
+  font-size: 1.25em; /* relative unit em  which is close to 20px */
 }
 
 .introduction .inner-introduction article h2 {
@@ -390,15 +397,18 @@ article {
 }
 
 @media (max-width: 768px) {
+
   .introduction {
     padding: 0px 20px;
   }
+
   .inner-introduction {
     padding: 35px 0 30px;
     border-radius: 35px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
+
 }
 
 /** END OF HOME PAGE INTRODUCTION SECTION **/
@@ -414,7 +424,6 @@ article {
   padding: 0px 40px 40px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
 }
 
 /* Inner Section 2 */
@@ -424,7 +433,6 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
   align-self: stretch;
   border-radius: 40px;
   background: #a4c694;
@@ -435,7 +443,6 @@ article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
   align-self: stretch;
 }
 
@@ -449,9 +456,11 @@ article {
 }
 
 @media (max-width: 768px) {
+
   .section-3 {
     padding: 0;
   }
+
   .inner-section-3 {
     padding: 40px 20px;
     border-radius: 35px;
@@ -464,6 +473,7 @@ article {
     gap: 15px;
     align-items: start;
   }
+
 }
 
 /** GREEN BLOCKS SECTIONS **/
@@ -479,7 +489,6 @@ article {
   padding: 0px 40px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
 }
 
 /* Inner Section 3 */
@@ -489,7 +498,6 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
   align-self: stretch;
   border-radius: 40px;
   background: #a4c694;
@@ -505,9 +513,11 @@ article {
 }
 
 @media (max-width: 768px) {
+
   .section-4 {
     padding: 0px 0px 40px;
   }
+
   .inner-section-4 {
     padding: 40px 20px;
     border-radius: 35px;
@@ -515,10 +525,10 @@ article {
     border-top-right-radius: 0px;
     border-top: 2px solid #000;
   }
+
 }
 
 /** END OF GREEN BLOCKS SECTIONS 2 **/
-
 
 
 
@@ -541,7 +551,6 @@ article {
   border-radius: 40px;
   background: #a4c694;
   align-items: stretch;
-
   width: 100%;
   height: 100%;
 }
@@ -572,7 +581,6 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
   height: 100%;
 }
 
@@ -586,13 +594,14 @@ article {
 }
 
 @media (max-width: 768px) {
+
   .split-in-2 {
     height: auto;
     padding: 20px 0px;
   }
+
   .container-split {
     flex-direction: column-reverse;
-    gap: 40px;
     padding: 20px;
     height: auto;
     padding: 20px;
@@ -600,7 +609,6 @@ article {
 
   .reverse .container-split {
     flex-direction: column-reverse;
-    gap: 40px;
     padding: 20px;
     height: auto;
   }
@@ -613,6 +621,7 @@ article {
     width: 100%;
     height: auto;
   }
+
 }
 
 /** END OF TWO COLUMN SECTION LAYOUT WITH IMAGE AND TEXT SPLIT-RIIGHT/LEFT **/
@@ -628,7 +637,6 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .CTA-picture {
@@ -663,6 +671,7 @@ article {
 }
 
 @media (max-width: 768px) {
+
   .CTA {
     display: flex;
     width: 100%;
@@ -674,6 +683,7 @@ article {
     border-radius: 0px;
     padding: 40px 20px;
   }
+
 }
 
 /** END OF HOME PAGE CTA SECTION AT THE BOTTOM **/
@@ -696,7 +706,6 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 9px;
   border-top: 2px solid #000;
   padding-top: 15px;
 }
@@ -729,7 +738,6 @@ article {
   flex-direction: row; /* Stack content vertically */
   align-items: center;
   text-align: center;
-  gap: 10px;
   margin-top: 15px;
   border-top: 2px solid #000;
   padding-top: 15px;
@@ -757,6 +765,7 @@ article {
 }
 
 @media (max-width: 768px) {
+
   .footer {
     padding: 20px;
   }
@@ -775,9 +784,6 @@ article {
 
   .icons {
     order: 2; /* Icons above copyright */
-    display: flex;
-    justify-content: center;
-    gap: 15px;
     margin-top: 10px;
   }
 
@@ -787,9 +793,9 @@ article {
 
   .footer-navbar-links {
     flex-direction: column;
-    gap: 10px;
     text-align: center;
   }
+
 }
 
 /** END OF FOOTER **/
@@ -839,6 +845,7 @@ article {
 
 /* Media query for screens 1200px and smaller */
 @media (max-width: 1200px) {
+
   .centered-box {
     width: 800px;
     height: 400px;
@@ -847,12 +854,14 @@ article {
   }
 
   .button-group > .general-button {
-    padding: 12px 70px;
+    padding: 20px 100px;
   }
+
 }
 
 /* Media query for screens 768px and smaller (mobile layout) */
 @media (max-width: 768px) {
+
   .centered-box {
     width: 90%;
     height: auto;
@@ -862,13 +871,13 @@ article {
 
   .button-group {
     flex-direction: column; /* Stack buttons vertically on small screens */
-    gap: 10px;
   }
 
   .button-group > .general-button {
     padding: 10px 40px;
     font-size: 0.9em;
   }
+
 }
 
 /** END OF COOKIES BLOCK **/
@@ -897,7 +906,6 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
 }
 
 .inner-isolation {
@@ -942,6 +950,7 @@ article {
 }
 
 @media (max-width: 768px) {
+
   .isolation {
     display: flex;
     width: 100%;
@@ -952,6 +961,7 @@ article {
     flex-direction: column; /* Stacks blocks vertically */
     gap: 20px; /* Adjust gap between blocks in column layout */
   }
+
 }
 
 /** END OF ISOLATION SECTION **/
@@ -1018,6 +1028,7 @@ article {
 
 /* Responsive styling for screens 768px and below */
 @media (max-width: 768px) {
+
   .image-blocks {
     padding: 0;
   }
@@ -1031,6 +1042,7 @@ article {
   .image-block-2 {
     max-width: 100%;
   }
+
 }
 
 /** END OF IMAGES BLOCKS SECTIONS **/
@@ -1228,7 +1240,6 @@ form input[type="submit"]:hover {
 
 .table th {
   border-radius: 20px;
-  gap: 10px;
 }
 
 .table tr:nth-child(even) {
@@ -1250,18 +1261,15 @@ form input[type="submit"]:hover {
 
 /* Responsiveness for mobile screens*/
 @media (max-width: 768px) {
+
   .contact-section {
     padding: 40px 20px;
   }
+
   .contact-container {
     flex-direction: column; /* Stack image and form vertically */
     gap: 20px;
     flex-direction: column-reverse;
-  }
-
-  .picture,
-  .form {
-    flex: 1 1 100%; /* Full width for each on small screens */
   }
 
   .table {
@@ -1273,6 +1281,7 @@ form input[type="submit"]:hover {
     float: none;
     margin: 20px auto;
   }
+
 }
 
 /** TABLE SECTION **/
@@ -1312,3 +1321,36 @@ form input[type="submit"]:hover {
 }
 
 /** END OF CONNECT WITH US SECTION **/
+
+
+
+/** GENERAL FIXES **/
+
+/* Making the heading follow a nice hirearchy */
+
+/* home page */
+.your-guide .inner-section-4 article > h3 {
+  font-size: 3.125rem;
+}
+
+.split-in-2.reverse.white-bg .text-box > h3 {
+  font-size: 3.125rem;
+}
+
+.split-in-2 .text-box > h3 {
+  font-size: 3.125rem;
+}
+
+.CTA .CTA-text-box > h3 {
+  font-size: 3.125rem;
+  color: white;
+  text-align: center;
+}
+/* end of home page */
+
+
+/* footer */
+.footer .quick-links > h2 {
+  font-size: 1.25rem; /* 20px / 16 = 1.25rem */
+}
+/* end of footer */
