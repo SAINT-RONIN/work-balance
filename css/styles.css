@@ -114,7 +114,9 @@ a:hover {
   justify-content: center;
   align-items: center;
   border-radius: 0.9375rem; /* 15px */
-  border: 2px solid #023020;
+  border-color:#023020;
+  border-style: solid;
+  border-width: 2px;
   color: #023020;
   background-color: transparent; /* Default background */
   transition: background-color 0.3s ease; /* Smooth transition for hover */
@@ -150,14 +152,7 @@ a:hover {
 
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
+.hidden-from-view {
   display: none;
 }
 
@@ -823,7 +818,7 @@ article {
   border-radius: 40px;
   border: 10px solid #023020;
   text-align: center;
-  z-index: 99999;
+  z-index: 9999;
 }
 
 .centered-box button {
@@ -1064,6 +1059,11 @@ article {
 /* Alighning buttons to left side */
 .img-chill-spots {
   align-items: flex-start;
+}
+
+/* Text-indent property */
+.relaxing-spots .inner-section-4 article > p {
+  text-indent: 10%;
 }
 
 /** --------------- EMD OFCHILL SPOTS PAGE --------------- **/
@@ -1322,9 +1322,11 @@ form input[type="submit"]:hover {
 
 /** END OF CONNECT WITH US SECTION **/
 
+/** --------------- END OF THANK YOU PAGE PAGE --------------- **/
 
 
-/** GENERAL FIXES **/
+
+/** --------------- GENERAL FIXES --------------- **/
 
 /* Making the heading follow a nice hirearchy */
 
@@ -1354,3 +1356,5 @@ form input[type="submit"]:hover {
   font-size: 1.25rem; /* 20px / 16 = 1.25rem */
 }
 /* end of footer */
+
+/** --------------- END OF GENERAL FIXES --------------- **/
