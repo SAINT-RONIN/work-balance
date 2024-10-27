@@ -728,8 +728,6 @@ article {
 .icons {
   display: flex;
   gap: 15px;
-  font-size: 30px;
-  color: black;
 }
 
 .facebook {
