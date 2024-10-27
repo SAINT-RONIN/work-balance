@@ -64,11 +64,6 @@ a:hover {
   font-weight: 700;
 }
 
-.icons a {
-  display: inline-block;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
 .hero-section h1 {
   color: #fff;
   text-align: center;
