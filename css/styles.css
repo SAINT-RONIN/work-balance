@@ -9,7 +9,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* Root font size is typically 16px by default. Adjust it if needed */
 html {
   font-size: 100%; /* 1 rem = 16px */
 }
@@ -63,6 +62,17 @@ a:link {
 a:hover {
   color: #023020;
   font-weight: 700;
+}
+
+.icons a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Transition for when I hover it become a bit bigger (A grow effect) */
+.icons a:hover i {
+  transform: scale(1.2);
+  color: #a4c694;
 }
 
 
@@ -866,4 +876,439 @@ article {
 /** --------------- END OF HOME PAHE --------------- **/
 
 
+
 /** --------------- WELL BEING TIPS PAGE --------------- **/
+
+/* HERO CUSTOM IMAGE **/
+
+.wellbeing-tips {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/wellbeing-tips-header.webp") center / cover no-repeat;
+}
+
+/* END OF HERO CUSTOM IMAGE **/
+
+
+/** ISOLATION SECTION **/
+.isolation {
+  display: flex;
+  width: 100%;
+  padding: 60px 120px 40px 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.inner-isolation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.isolation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.isolation-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.block-1,
+.block-2,
+.block-3 {
+  /* Separate selectors for each block */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 30px;
+  flex: 1; /* Flex-grow to make them equal width */
+  border-radius: 40px;
+  background-color: #a4c694;
+}
+
+@media (max-width: 768px) {
+  .isolation {
+    display: flex;
+    width: 100%;
+    padding: 40px 20px 40px 20px;
+  }
+
+  .isolation-blocks {
+    flex-direction: column; /* Stacks blocks vertically */
+    gap: 20px; /* Adjust gap between blocks in column layout */
+  }
+}
+
+/** END OF ISOLATION SECTION **/
+
+/** --------------- END OF WELL BEING TIPS PAGE --------------- **/
+
+
+
+/** --------------- QUICK BREAKS PAGE --------------- **/
+/* HERO CUSTOM IMAGE **/
+
+.quick-breaks {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/Rotterdam-park1.webp") center / cover no-repeat;
+}
+
+/* END OF HERO CUSTOM IMAGE **/
+
+/** IMAGES BLOCKS SECTIONS **/
+
+.image-blocks {
+  display: flex;
+  width: 100%;
+  padding: 0 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* White background for the first section */
+.inner-blocks.white-background {
+  background-color: #ffffff; /* White background */
+}
+
+/* Default styling for other .inner-blocks sections */
+.inner-blocks {
+  display: flex;
+  width: 100%;
+  padding: 100px 80px;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: #a4c694; /* Soft green */
+  border-radius: 40px;
+}
+
+/* Styling for individual content blocks */
+.image-block-1,
+.image-block-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Styling for images */
+.image-block {
+  width: 100%;
+  height: 572px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+/* Responsive styling for screens 768px and below */
+@media (max-width: 768px) {
+  .image-blocks {
+    padding: 0;
+  }
+
+  .inner-blocks {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .image-block-1,
+  .image-block-2 {
+    max-width: 100%;
+  }
+}
+
+/** END OF IMAGES BLOCKS SECTIONS **/
+
+/** --------------- END OF QUICK BREAKS PAGE --------------- **/
+
+
+
+/** --------------- CHILL SPOTS PAGE --------------- **/
+/* HERO CUSTOM IMAGE **/
+
+.chill-spots {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/Joost.webp") center / cover no-repeat;
+}
+
+/* END OF HERO CUSTOM IMAGE **/
+
+/* Alighning buttons to left side */
+.img-chill-spots {
+  align-items: flex-start;
+}
+
+/** --------------- EMD OFCHILL SPOTS PAGE --------------- **/
+
+
+
+
+/** --------------- WORKSPACE TIPS PAGE --------------- **/
+/* HERO CUSTOM IMAGE **/
+
+.workspace-tips {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/water-park.webp") center / cover no-repeat;
+}
+
+/* END OF HERO CUSTOM IMAGE **/
+
+/** --------------- END OF WORKSPACE TIPS PAGE --------------- **/
+
+
+
+/** --------------- CONTACT US PAGE --------------- **/
+/* HERO CUSTOM IMAGE **/
+
+.contact-us {
+  background: linear-gradient(90deg, #548a8e 45%, #60b965 92%); /* 90% degrees mean that the line will walk horizontally and 180 degrees means it will walk vertically. */
+}
+
+/* END OF HERO CUSTOM IMAGE **/
+
+/** CONTACT SECTION **/
+.contact-section {
+  display: flex;
+  width: 100%;
+  padding: 40px 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px; /* Optional: control max width */
+  gap: 45px;
+}
+
+.picture,
+.form {
+  flex: 1 1 50%; /* 50% width for each */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.form {
+  border: 1px solid #000;
+  border-radius: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Form Input Styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-size: 1.25rem;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form label,
+legend {
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.radio-group-container {
+  border: 1px solid #000;
+  border-radius: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border: none;
+}
+
+/* Larger custom radio buttons */
+form input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #023020;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Adds space between label and input */
+  margin-bottom: 20px; /* Adds space between each fieldset */
+  width: 100%;
+  border: none;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  background-color: #a4c694;
+  color: #294335;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+form input[type="submit"]:hover {
+  background-color: #294335;
+  color: #a4c694;
+}
+
+/** END OF CONTACT SECTION **/
+
+
+
+/** TABLE SECTION **/
+/* a table for the assessment */
+
+.table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  table-layout: fixed;
+  padding: 0 40px;
+  align-items: center;
+}
+
+.table table, th {
+  border:1px solid black;
+  padding: 20px 20px;
+}
+
+.table table {
+  border-radius: 40px;
+  border-spacing: 10px;
+}
+
+.table th {
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.table tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+.take-care {
+  float: right;
+  margin-left: 20px;
+}
+
+.take-care-picture {
+  border-radius: 40px;
+}
+
+/* Responsiveness for mobile screens*/
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 20px;
+  }
+  .contact-container {
+    flex-direction: column; /* Stack image and form vertically */
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .picture,
+  .form {
+    flex: 1 1 100%; /* Full width for each on small screens */
+  }
+
+  .table {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+
+  .take-care {
+    float: none;
+    margin: 20px auto;
+  }
+}
+
+/** TABLE SECTION **/
+
+/** --------------- END OF CONTACT US PAGE --------------- **/
+
+
+
+/** --------------- THANK YOU PAGE PAGE --------------- **/
+/* HERO CUSTOM IMAGE **/
+
+.thank-you {
+  background: linear-gradient(90deg, #548a8e 45%, #60b965 92%); /* 90% degrees mean that the line will walk horizontally and 180 degrees means it will walk vertically. */
+}
+
+/* END OF HERO CUSTOM IMAGE **/
+
+.h1-thank-you {
+  padding: 120px 0px 40px 0px;
+}
+
+.go-back-home {
+  margin: 40px 0px 0px 0px;
+}
+
+
+/** CONNECT WITH US SECTION **/
+.connect-with-us {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.connect-with-us address{
+  padding: 20px 0px;
+  font-size: 50px;
+  gap: 20px;
+}
+
+/** END OF CONNECT WITH US SECTION **/
