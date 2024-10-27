@@ -69,13 +69,6 @@ a:hover {
   text-align: center;
 }
 
-/* Transition for when I hover it become a bit bigger (A grow effect) */
-.icons a:hover i {
-  transform: scale(1.2);
-  color: #a4c694;
-}
-
-
 .hero-button {
   font-family: Montserrat, sans-serif;
   font-size: 1.25rem; /* 20px / 16 = 1.25rem */
