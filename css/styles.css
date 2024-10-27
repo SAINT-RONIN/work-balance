@@ -277,10 +277,6 @@ a:hover {
   padding: 10px;
 }
 
-.close-menu-label {
-  display: none;
-}
-
 /* Show the hamburger menu and set up overlay at 1220px */
 @media (max-width: 1220px) {
 
@@ -334,10 +330,6 @@ a:hover {
 
   .hero-heading {
     font-size: 45px;
-  }
-
-  .hero-description {
-    font-size: 18px;
   }
 
   .hero-buttons {
@@ -819,13 +811,6 @@ article {
   border: 10px solid #023020;
   text-align: center;
   z-index: 9999;
-}
-
-.centered-box button {
-  margin-top: 10px;
-  padding: 8px 16px;
-  font-size: 1em;
-  cursor: pointer;
 }
 
 .button-group {
